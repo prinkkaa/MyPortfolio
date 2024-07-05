@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+<style>
+    *{
+    margin: 0;
+}
+.navbar{
+    background-color: rgb(206, 118, 190);
+    height: 150px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+.list{
+    text-decoration: none;
+    padding: 20px;
+    font-size: larger;
+    color: white;
+
+}
+h1,h4{
+    text-align: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about{
+    height: 150px;
+    margin-top: 5px;
+    background-color: rgb(147, 159, 173);
+}
+.project{
+height: auto;
+background-color: bisque;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+.child{
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+height: 250px;
+width: 250px;
+justify-content: end;
+border-radius: 10px;
+margin: 20px;
+background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjw5kiZEfUtrTfeq6BvjoeWaxKZ-4mTvfSeQ&s");
+background-position: center;
+background-size: cover;
+
+}
+.contact{
+    height: 300px;
+    margin top:50px ;: 200px;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    background-color: rgb(113, 104, 104);
+    color: white;
+}
+.btn{
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: rgb(172, 112, 112);
+    color: white;
+
+}
+.foot{
+    height: 100px;
+    background-color: rgb(196, 151, 151);
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+
+@media (max-width:353px) {
+    .list{
+        padding: 3px;
+    }
+
+}
+@media (max-width:500px) {
+    .child{
+        height: 400px;
+        width: 400px;
+    }
+    .contact{
+        font-size: larger;
+    }
+}
+</style>
+<body>
+    <!--navbar -->
+    <div class="navbar"><br>
+        <h1>My Portfolio</h1>
+        <br>
+        <a class="list" href="#about">About Me</a>
+        <a class="list" href="#about">Portfolio</a>
+        <a class="list" href="#about">Contact</a>
+    </div>
+    <br>
+    <!--aboutme -->
+    <div class="about"><br>
+        <h1>About Me</h1><br>
+        <h4> I'm a developer</h4>
+    </div>
+    <!-- featured -->
+     <br>
+     <h1>Featured Project</h1>
+    <div class="project">
+        <div class="child">Project 1</div>
+        <div class="child">Project 2</div>
+        <div class="child">Project 3</div>
+        <div class="child">Project 4</div>
+        <div class="child">Project 5</div>
+    </div>
+    <br>
+    <!-- Contact us page -->
+     <div class="contact">
+        <h1>Contact</h1>
+        <br>
+        <label for="name">Name:</label>
+        <br>
+        <input type="name" id="name">
+    <br><br>
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" id="email">
+        <br><br>
+        <label for="contact">Contact:</label>
+        <br>
+        <input type="contact" id="contact">
+        <br>
+        <button class="btn">Submit</button>
+
+     </div>
+     <footer>
+        <div class="foot">
+            <H2>Thankyou</H2>
+        </div>
+     </footer>
+
+</body>
+</html>
